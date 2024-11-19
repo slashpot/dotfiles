@@ -24,7 +24,7 @@
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-# font_size 11.0
+font_size 20.0
 
 #: Font size (in pts).
 
@@ -87,6 +87,7 @@
 #:     map alt+1 disable_ligatures_in active always
 #:     map alt+2 disable_ligatures_in all never
 #:     map alt+3 disable_ligatures_in tab cursor
+
 
 #: Note that this refers to programming ligatures, typically
 #: implemented using the calt OpenType feature. For disabling general
@@ -1488,7 +1489,7 @@
 #: builds do not do update checking. Changing this option by reloading
 #: the config is not supported.
 
-# startup_session none
+startup_session ./dev-session.conf
 
 #: Path to a session file to use for all kitty instances. Can be
 #: overridden by using the kitty --session =none command line option
@@ -1703,7 +1704,7 @@
 #: background_opacity. If you want to use both, you are probably
 #: better off just hiding the titlebar with hide_window_decorations.
 
-# macos_option_as_alt no
+macos_option_as_alt yes
 
 #: Use the Option key as an Alt key on macOS. With this set to no,
 #: kitty will use the macOS native Option+Key to enter Unicode
@@ -2159,7 +2160,7 @@
 #: New tab
 
 # map kitty_mod+t new_tab
-# map cmd+t       new_tab
+map cmd+t       new_tab_with_cwd
 
 #: Close tab
 
@@ -2198,7 +2199,7 @@
 
 #:     map ctrl+t new_tab !neighbor [optional cmd to run]
 #: }}}
-
+map ctrl+shift+t new_tab_with_cwd .
 #: Layout management {{{
 
 #: Next layout
@@ -2527,3 +2528,9 @@
 #: }}}
 
 #: }}}
+
+
+# BEGIN_KITTY_THEME
+# Base2Tone Desert Dark
+include current-theme.conf
+# END_KITTY_THEME
