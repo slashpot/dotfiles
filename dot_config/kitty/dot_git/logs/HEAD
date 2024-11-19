@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 503565ecbdd99cc5eeb7cb26a414d39d1482ddc5 Eric Lin <eric.lin@titansoft.com.sg> 1726204031 +0800	commit (initial): add config
+503565ecbdd99cc5eeb7cb26a414d39d1482ddc5 c36dda4e7f902931ba33551511c2a9ddcc93df00 Eric Lin <eric.lin@titansoft.com.sg> 1726204995 +0800	commit: update config
+c36dda4e7f902931ba33551511c2a9ddcc93df00 cb95d774afd1bb4769f5636e2eb1f20bee6a5f64 Eric Lin <eric.lin@titansoft.com.sg> 1726393739 +0800	commit: add new tab with cwd
+cb95d774afd1bb4769f5636e2eb1f20bee6a5f64 692cee7dd08f3dfbdb1adc77adf548540e487519 Eric Lin <eric.lin@titansoft.com.sg> 1726556414 +0800	commit: fix alt key on mac
+692cee7dd08f3dfbdb1adc77adf548540e487519 a5330a1a25f32708f0b2cccc17fac95eeac02a67 Eric Lin <eric.lin@titansoft.com.sg> 1731988199 +0800	commit: open new tab with cwd
