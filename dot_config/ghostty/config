@@ -1,0 +1,4 @@
+theme = gruvbox-material
+
+#key binding
+keybind = super+r=reload_config
