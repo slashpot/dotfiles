@@ -1,0 +1,34 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+
+# specify directory to install
+cask_args appdir: "/Applications"
+
+# install packages + some apps
+brew "node"
+brew "git"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "starship"
+brew "neovim"
+
+# Casks
+cask "notion"
+cask "postman"
+cask "visual-studio-code"
+cask "google-chrome"
+cask "zoom"
+cask "slack"
+cask "ghostty"
+cask "1password"
+cask "todoist"
+
+# 'vscode --install-extension'
+vscode "GitHub.codespaces"
+
+EOF
+{{ end -}}
