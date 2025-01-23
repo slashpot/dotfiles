@@ -5,7 +5,7 @@
 ## Setup
 
 ```bash
-curl -sfL https://raw.githubusercontent.com/DanielMSchmidt/dotfiles/main/.startup.sh | bash
+curl -sfL https://raw.githubusercontent.com/slashpot/dotfiles/refs/heads/main/.startup.sh | bash
 ```
 
 # install openlens extension
