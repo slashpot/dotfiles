@@ -25,3 +25,4 @@ chezmoi apply
 
 # gcloud
 curl https://sdk.cloud.google.com | bash
+gcloud components install gke-gcloud-auth-plugin
