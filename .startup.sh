@@ -20,7 +20,7 @@ else
 fi
 
 brew install chezmoi
-chezmoi init danielmschmidt
+chezmoi init slashpot
 chezmoi apply
 
 # gcloud
