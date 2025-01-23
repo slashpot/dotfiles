@@ -22,3 +22,6 @@ fi
 brew install chezmoi
 chezmoi init danielmschmidt
 chezmoi apply
+
+# gcloud
+curl https://sdk.cloud.google.com | bash
