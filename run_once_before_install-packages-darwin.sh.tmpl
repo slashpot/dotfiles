@@ -1,7 +1,7 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
-brew bundle --no-lock --file=/dev/stdin <<EOF
+brew bundle --file=/dev/stdin <<EOF
 
 # specify directory to install
 cask_args appdir: "/Applications"
@@ -19,7 +19,16 @@ brew "pnpm"
 brew "yarn"
 brew "lazygit"
 brew "kubectl"
-brew "bruno"
+brew "yazi"
+brew "ffmpegthumbnailer" 
+brew "sevenzip" 
+brew "jq" 
+brew "poppler" 
+brew "fd" 
+brew "ripgrep" 
+brew "fzf" 
+brew "zoxide" 
+brew "imagemagick" 
 
 # Casks
 cask "notion"
