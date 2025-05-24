@@ -6,6 +6,9 @@ return {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
+    "L3MON4D3/LuaSnip",
+    "saadparwaiz1/cmp_luasnip",
+    "mlaursen/vim-react-snippets",
   },
   -- Not all LSP servers add brackets when completing a function.
   -- To better deal with this, LazyVim adds a custom option to cmp,
@@ -18,6 +21,10 @@ return {
   -- ```
   opts = function()
     vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
+    require("vim-react-snippets").lazy_load()
+    -- if you do not want to wrap all props in `Readonly<T>`
+    local config = require("vim-react-snippets.config")
+    config.readonly_props = false
     local cmp = require("cmp")
     local defaults = require("cmp.config.default")()
     local auto_select = true
@@ -48,6 +55,7 @@ return {
         { name = "lazydev" },
         { name = "nvim_lsp" },
         { name = "path" },
+        { name = "luasnip" },
       }, {
         { name = "buffer" },
       }),
