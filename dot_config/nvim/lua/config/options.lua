@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.g.autoformat = false
 vim.g.lazyvim_eslint_auto_format = true
+vim.g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
